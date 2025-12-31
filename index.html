@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <title>Sarah Nene Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const words = ["CS Engineer", "Web Developer"];
+    let index = 0;
+
+    const textSpan = document.getElementById("changing-text");
+
+    setInterval(() => {
+        index = (index + 1) % words.length;
+        textSpan.textContent = words[index];
+    }, 2000);
+
+});
+</script>
+
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Portfolio<span>.</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Sarah Nene</h1>
+
+      <h2>
+  I'm a <span id="changing-text">CS Engineer</span>
+</h2>
+
+
+        <p>
+            Computer Science Engineer passionate about Cybersecurity,
+            Web Development, and building secure digital systems.
+        </p>
+
+        <a href="#" class="btn">Download CV</a>
+        <div class="social-icons">
+    <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://facebook.com/yourusername" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="hero-image">
+        <div class="circle">
+            <img src="my pic.jpeg" alt="Profile">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+        I completed my high school in 2020 and I specialize in cybersecurity,
+        ethical hacking, and secure web development. I enjoy learning new
+        technologies and solving real-world problems.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section dark" id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="cards">
+        <div class="card">Web Development</div>
+        <div class="card">Cybersecurity</div>
+        <div class="card">Ethical Hacking</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Login System</div>
+        <div class="card">Network Security Tool</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Sarah Nene | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
